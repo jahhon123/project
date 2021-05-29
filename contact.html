@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>wakaocell</title>
+</head>
+<body>
+     <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="../image/logo.png .png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="company.html">Specialty</a></li>
+                 <li><a href="product.html">Product</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+        </div>
+        
+     <i class="fa fa-bars"onclick="showMenu()"></i>
+     </nav>
+          <h1>Contact Us</h1> 
+     </section>
+
+      <!-- contact us -->
+
+      <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12655.41626758872!2d127.0957088!3d37.5349372!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5759ecf76da603f!2zKOyjvCnsmYDsubTsmKTshYA!5e0!3m2!1sko!2skr!4v1618305172025!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+  <section class="contact-us">
+          <div class="row">
+              <div class="contact-col">
+                  <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>서울특별시 광진구 구의3동 광나루로56길 85 프라임센터 30층 16,17,18호 와카오셀</h5>
+                        <p>Wakaocell</p> 
+                    </span>
+                  </div>
+                  <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>02-3424-3332</h5>
+                        <p>월요일 ~ 토요일, 오전 9시 30 분 ~ 오후 6시 30 분</p> 
+                    </span>
+                  </div>
+                  <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>4h@wakaocell.co.kr</h5>
+                        <p>Email us your query</p> 
+                    </span>
+                  </div>
+              </div>
+              <div class="contact-col">
+                  <form action="form-handler.php" method="POST">
+                   <input type="text" name="name" placeholder="Enter your name" required>
+                   <input type="email" name="email" placeholder="Enter email address" required>
+                   <input type="text" name="subject" placeholder="Enter your subject" required>
+                   <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                   <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+              </div>
+            </div>
+      </section>
+  <section class="footer">
+      <h1> <strong> About Us </strong> </h1>
+      <p>WAKAOCELL은 모든 생명체에 생명동력의 역할을 하는 최소입자 에너지 
+        미량원소를 찾아 세포를 활성화 하는 것에 초점을 맞추어 아름다움과 건강은 
+        세포에서 비롯된다는 사실을 입증하고,<br> 세포 활성화는 DNA 최적 상태를 통해 태초의 건강 비법을 찾고자 
+        WAKAO CELL의 노력은 계속 됩니다.
+        </p>
+        <div class="icons">
+          <a href="https://m.facebook.com/home.php?soft=bookmarks">  <i class="fa fa-facebook"></i>  </a> 
+           <a href="https://www.instagram.com/p/CNHLp7JHOdb/?igshid=80zqs4pkfvqw"> <i class="fa fa-instagram" ></i>  </a> 
+           <a href="https://youtu.be/GySCzJqsqek"> <i class="fa fa-youtube" ></i>  </a> 
+             <i class="fa fa-twitter" ></i>
+             <p>Made with  <i class="fa fa-heart-o" ></i> by Wakaocell</p>
+   </div>
+
+  </section>
+  
+  <script>
+
+     var navLinks = document.getElementById("navLinks");
+
+     function showMenu(){
+        navLinks.style.right = "0";
+     }
+     function hideMenu(){
+        navLinks.style.right = "-200px";
+     }
+
+   </script>
+
+
+</body>
+</html>
